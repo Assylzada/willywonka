@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Willy Wonka's Chocolates — Shop</title>
+  <meta name="description" content="Willy Wonka's shop" />
+  <link rel="stylesheet" href="styleee.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-logo">W</div>
+    <nav class="nav-links">
+      <a href="main.html" class="active">Home</a>
+      <a href="shopp.html">Shop</a>
+    </nav>
+  </header>
+
+  <div class="wrap">
+    <aside class="sidebar" aria-label="sidebar">
+      <div class="brand">
+        <div>
+          <div class="site-name">Wonka's Chocolates</div>
+          <div class="site-sub">Handcrafted happiness</div>
+        </div>
+      </div>
+      <div style="margin-top:14px;font-size:13px;color:rgba(255,255,255,0.6)">
+        <strong>Open hours</strong>
+        <div style="margin-top:6px">Every day — 9:00 — 21:00</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero-left">
+          <div class="title">Welcome to Willy Wonka's Chocolates</div>
+          <div class="lead">Magical, small-batch chocolates — lovingly crafted. Pure CSS, lightweight and accessible.</div>
+
+          <div class="cards-row" id="shop">
+            <!-- Product 1 -->
+            <article class="card">
+              <img src="silverr.png" alt="FizzBerry Bar"/>
+              <div class="meta">
+                <div class="name">Silver Lightning</div>
+                <div class="price">$12</div>
+              </div>
+              <p class="desc">Rich dark chocolate with a liquid caramel heart infused with sea salt.</p>
+              <form action="#checkout" method="get">
+                <input type="hidden" name="product" value="golden-truffle" />
+                <button class="btn-primary">Buy — $12</button>
+              </form>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="card">
+              <img src="bignightoutt.png" alt="FizzBerry Bar"/>
+              <div class="meta">
+                <div class="name">Big night out candy</div>
+                <div class="price">$9</div>
+              </div>
+              <p class="desc">Milk chocolate studded with popping candy and freeze-dried raspberries.</p>
+              <form action="#checkout" method="get">
+                <input type="hidden" name="product" value="fizzberry-bar" />
+                <button class="btn-primary">Buy — $9</button>
+              </form>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="card">
+              <img src="barr.png" alt="FizzBerry Bar"/>
+              <div class="meta">
+                <div class="name">Wonka Cocoa Box</div>
+                <div class="price">$26</div>
+              </div>
+              <p class="desc">A bar of chocolate — espresso, hazelnut, orange blossom and more.</p>
+              <form action="#checkout" method="get">
+                <input type="hidden" name="product" value="velvet-cocoa-box" />
+                <button class="btn-primary">Buy — $26</button>
+              </form>
+            </article>
+          </div>
+
+          <section id="gallery" class="gallery-section">
+            <h2>Magic Moments Gallery</h2>
+            <div class="gallery">
+              <div class="gallery-item"><img src="bignightoutt.png" alt=""><div class="caption">Big Night Out</div></div>
+              <div class="gallery-item"><img src="silverr.png" alt=""><div class="caption">Silver Lightning</div></div>
+              <div class="gallery-item"><img src="forty.png" alt=""><div class="caption">Forty Second Sweet</div></div>
+              <div class="gallery-item"><img src="macaroon.png" alt=""><div class="caption">Macaroon</div></div>
+              <div class="gallery-item"><img src="mintt.png" alt=""><div class="caption">Mint Bar</div></div>
+              <div class="gallery-item"><img src="eclair.png" alt=""><div class="caption">Hair Repair Eclair</div></div>
+              <div class="gallery-item"><img src="wonkk.png" alt=""><div class="caption">Wonka</div></div>
+              <div class="gallery-item"><img src="barr.png" alt=""><div class="caption">Wonka Bar</div></div>
+              <div class="gallery-item"><img src="cakee.png" alt=""><div class="caption">Cake</div></div>
+            </div>
+          </section>
+
+          <section id="checkout" class="checkout" aria-label="checkout">
+            <h3>Order & Checkout</h3>
+            <p style="color:rgba(255,255,255,0.6);font-size:13px">This form submits order data to your server.</p>
+            <form action="/create-order" method="post">
+              <div class="field">
+                <input name="name" placeholder="Full name" required />
+                <input name="email" placeholder="Email address" required />
+              </div>
+              <div class="field">
+                <input name="product" placeholder="Product (e.g. golden-truffle)" required />
+                <input name="quantity" type="number" min="1" value="1" required />
+              </div>
+              <div class="field">
+                <input name="address" placeholder="Shipping address" required />
+              </div>
+              <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
+                <button class="btn-primary" type="submit">Place order</button>
+              </div>
+            </form>
+          </section>
+        </div>
+
+        <aside class="best-sellers">
+          <img src="willy.png" alt="Main"/>
+          <h4>Best sellers</h4>
+          <div class="best-items">
+            <div>Wonka Cocoa Box — $26</div>
+            <div>Silver Lightning — $12</div>
+            <div>Big night out — $9</div>
+          </div>
+          <div class="note">Free local pickup on orders over $40.</div>
+        </aside>
+      </section>
+
+      <footer>
+        © Willy Wonka's Chocolates — handcrafted with a little magic
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
